@@ -61,7 +61,7 @@ class MatriceMath :
         
             
             
-    #Cij=Xij+Yij
+
     def addition(self, X, Y) :
         result = self.get_empty(len(X), len(Y[0]))
  
@@ -69,6 +69,17 @@ class MatriceMath :
             result[i] = [X[i][j] + Y[i][j] for j in range(len(Y[i]))]
                                     
         return result
+    
+    
+    
+    def substraction(self, X, Y) :
+        result = self.get_empty(len(X), len(Y[0]))
+ 
+        for i in range(len(X)):
+            result[i] = [X[i][j] - Y[i][j] for j in range(len(Y[i]))]
+                                    
+        return result
+            
             
     
 maths= MatriceMath()
@@ -80,12 +91,12 @@ x = [[1, 2],
 
 
 y = [[5, 6], 
-     [7, 8]]
+     [7, 3]]
 
 #print(maths.get_empty(200, 200))
 
 
 #print(maths.multiplication(x, y))
-print(maths.addition(x, y))
+print(maths.substraction(x, y))
 
 
