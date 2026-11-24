@@ -1,7 +1,3 @@
-import random 
-
-A = [[1,2,3],[4,-5,6]]
-B = [[-1,0,1],[0,1,2],[-1,1,0]]
 
 class MatriceMath :
     def __init__(self):
@@ -82,21 +78,6 @@ class MatriceMath :
             
             
     
-maths= MatriceMath()
 
-
-x = [[1, 2], 
-     [3, 4]]
-
-
-
-y = [[5, 6], 
-     [7, 3]]
-
-#print(maths.get_empty(200, 200))
-
-
-#print(maths.multiplication(x, y))
-print(maths.substraction(x, y))
 
 
